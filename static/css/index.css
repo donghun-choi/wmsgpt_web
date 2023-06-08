@@ -1,18 +1,40 @@
-#app {
+#sec-inner {
+  width: 1512px;
+  display: flex;
+  margin: 0 auto;
 }
 
+section {
+  height: 100vh;
+}
 header {
   position: relative;
   width: 100%;
   height: 60vh;
   overflow: hidden;
 }
+
 #sec-1 {
   height: 40vh;
+  display: flex;
+  justify-content: center;
 }
+#sec-1 > span {
+  font-size: 32px;
+  animation: blinking 1s infinite; /* 1초 동안 계속해서 반복 */
+}
+@keyframes blinking {
+  50% {
+    opacity: 0;
+  } /* 깜빡이는 상태 */
+  90% {
+    opacity: 1;
+  } /* 시작 상태로 복귀 */
+}
+
 .inner {
   position: absolute;
-  top: 0;
+  top: 30%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -22,24 +44,6 @@ header {
   background-repeat: no-repeat;
 }
 
-#header-front {
-  top: 25vw;
-  left: calc(50% - 63vw / 2);
-  position: absolute;
-  z-index: 3;
-  height: auto;
-  background: transparent;
-  border: 0;
-  color: #06c;
-  font-size: inherit;
-  line-height: inherit;
-  font-weight: inherit;
-  letter-spacing: inherit;
-  padding: 0;
-  vertical-align: inherit;
-  cursor: pointer;
-  text-decoration: none;
-}
 #sec-2 {
   height: 100vh;
   padding: 32px;
@@ -49,21 +53,108 @@ header {
 }
 
 #sec-2 h1 {
-  font-size: 56px;
+  font-size: 46px;
 }
 .introduction {
-  width: 270px;
   margin: 0 auto auto 56px;
 }
 
 .introduction > li {
   margin-left: 16px;
 }
+
+.introduction > hr {
+  height: 1px;
+  border: none;
+  /* // background-color: red; */
+  background-image: linear-gradient(90deg, white, transparent);
+}
 .discord-chat-container {
-  margin: 0 auto;
+  height: 348px;
+  margin: 9.4em auto;
   position: relative;
   width: 432px;
-  height: 768px;
   background: #313338;
   border-radius: 12px;
+  display: flex;
+  align-items: center;
+}
+.discord-chat-container > img {
+  width: 98%;
+}
+#aboutWmsgpt img {
+  width: 172px;
+  height: 172px;
+  filter: drop-shadow(0px 0px 8px #000);
+}
+
+.humor-contaier {
+  display: flex;
+  width: 100%;
+  height: 172px;
+  padding: 80px 120px;
+}
+#line {
+  margin: 0 48px;
+  border-right: 1px solid #86868b;
+}
+.three-point {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.three-point h4 {
+  height: 14px;
+  color: #86868b;
+}
+.three-point span {
+  display: block;
+  height: 80px;
+  font-size: 60px;
+  line-height: 1.0555555556;
+  font-weight: 600;
+  letter-spacing: 0em;
+}
+
+.three-point h3 {
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 0.012rem;
+  color: #86868b;
+}
+#notimportant {
+  color: #86868b;
+  font-size: 17px;
+  font-weight: 550;
+}
+#lie {
+  font-size: 12px;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  margin-left: auto;
+  margin-right: 60px;
+}
+#displayblock {
+  display: block;
+}
+.introductingWmsgpt {
+  font-weight: 600;
+  font-size: 24px;
+  color: #86868b;
+  margin-top: 200px;
+  padding: 0 15vw;
+}
+#important {
+  color: #000;
+}
+#aboutWmsgpt button {
+  color: black;
+  border: 2px solid black;
+  border-radius: 12px;
+  background: #00000000;
+  width: 160px;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 15vw;
 }

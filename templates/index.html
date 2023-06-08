@@ -4,31 +4,119 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>&nbsp;WMSGPT | not ready</title>
+    <meta name="Description" content="Introducing WMSGPT. Fine-tuned GPT-3.5 Discord ChatBot" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.wmsgpt.org/" />
+    <meta property="og:title" content="WMSGPT" />
+    <meta
+      property="og:image"
+      content="https://cdn.discordapp.com/attachments/1116244062085857322/1116244088543518720/Untitled-2.png"
+    />
+    <meta property="og:description" content="Introducing WMSGPT. Fine-tuned GPT-3.5 Discord ChatBot" />
+    <meta property="og:site_name" content="WMSGPT" />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="WMSGPT" />
+    <meta name="twitter:description" content="Introducing WMSGPT. Fine-tuned GPT-3.5 Discord ChatBot" />
+    <meta
+      name="twitter:image"
+      content="https://cdn.discordapp.com/attachments/1116244062085857322/1116244088543518720/Untitled-2.png"
+    />
+    <meta name="twitter:image:alt" content="WMSGPT.JPG" />
+
     <link rel="shortcut icon" href="../static/favicon.png" />
     <link rel="stylesheet" href="../static/css/index.css" />
     <link rel="stylesheet" href="../static/css/reset.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
     <script async src="../static/js/scroll.js"></script>
+
+    <title>&nbsp;WMSGPT | Beta</title>
   </head>
   <body>
     <div id="app">
-      <header>
-        <div class="inner"></div>
-      </header>
-      <section id="sec-1">
-        <a id="header-front" target="_blank" href="https://github.com/sexy-code-maker/WMSGPT">GITHUB 페이지 방문하기</a>
-      </section>
-      <section id="sec-2">
-        <div class="introduction">
-          <h1>WMSGPT</h1>
-          <hr />
-          <br />
-          <li><h2>Powered By GPT-3.5 and MOGO</h2></li>
+      <div class="content">
+        <header>
+          <div class="inner"></div>
+        </header>
+        <section id="sec-1">
+          <span class="blinking">아래 화살표 눌러 탐색 시작하기</span>
+        </section>
+      </div>
+      <section class="content" id="sec-2">
+        <div id="sec-inner">
+          <div class="introduction">
+            <h1>WMSGPT</h1>
+            <hr />
+            <br />
+            <li>Powered By OpenAI</li>
+            <h1>
+              밤 12시. 야심한 시간<br />
+              숙제를 물어보기에는 너무 늦어버렸죠 <br />
+              걱정하지 마세요 <br />
+              WMSGPT가 있으니까요
+            </h1>
+          </div>
+          <div class="discord-chat-container">
+            <img src="../static/images/forkedUp.png" alt="" />
+          </div>
         </div>
-        <div class="discord-chat-container">
-          <div class="button-area"></div>
+      </section>
+      <section class="content" id="aboutWmsgpt">
+        <div id="sec-inner displayblock">
+          <div class="humor-contaier">
+            <img src="../static/favicon.png" alt="" />
+            <span id="line"></span>
+            <div class="three-point">
+              <div>
+                <h4>최대</h4>
+                <span>22.4배</span>
+                <h3>
+                  더 빠른 응답 속도 <br />
+                  <div id="notimportant">(자고 있는 선생님 대비)</div>
+                </h3>
+              </div>
+              <div>
+                <h4 style="margin: 21.28px 0 12px 0">최대</h4>
+                <span id="lie">0</span>
+                <span>24.31&nbsp;배</span>
+                <h3>
+                  더 정확한 응답 <br />
+                  <div id="notimportant">(ChatGPT 대비)</div>
+                </h3>
+              </div>
+              <div>
+                <h4>최대</h4>
+                <span>24시간</span>
+                <h3>이용 가능 시간</h3>
+              </div>
+            </div>
+            <hr />
+          </div>
+          <div class="introductingWmsgpt">
+            <span>
+              WMSGPT는 <span id="important">당신이 하는 모든 채팅에 응답해줍니다.</span> <br />
+              수업 과제를 위한 질문이든, 내일 점심 매뉴를 위한 질문이든, 막힘없는 대답을 자랑하죠. <br />
+              여기에 <span id="important">온종일 돌아가는 서버</span> 까지 구현해, 24시간 부담없이 질문을 던질 수
+              있답니다.
+              <br />
+              <br />
+              Intel Core i7 프로세서를 탑재한 <span id="important">PC 데스크탑 대비</span>, WMSGPT는 최대
+              <span id="important">10^0배 더 빠른 응답 속도</span>, <br />
+              최대 <span id="important">5*0% 더 빠른 DB 브라우징 속도</span>, 최대
+              <span id="important">1*00% 더 긴 배터리 사용 시간</span>을 자랑합니다.
+            </span>
+          </div>
+          <button onclick="location.href='/github';">WMSGPT 심층 탐구</button>
         </div>
       </section>
+      <section class="content"></section>
     </div>
   </body>
 </html>
