@@ -1,0 +1,69 @@
+#app {
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+#sec-1 {
+  height: 40vh;
+}
+.inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/wmsgpt.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#header-front {
+  top: 25vw;
+  left: calc(50% - 63vw / 2);
+  position: absolute;
+  z-index: 3;
+  height: auto;
+  background: transparent;
+  border: 0;
+  color: #06c;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  padding: 0;
+  vertical-align: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+#sec-2 {
+  height: 100vh;
+  padding: 32px;
+  background: #000;
+  color: white;
+  display: flex;
+}
+
+#sec-2 h1 {
+  font-size: 56px;
+}
+.introduction {
+  width: 270px;
+  margin: 0 auto auto 56px;
+}
+
+.introduction > li {
+  margin-left: 16px;
+}
+.discord-chat-container {
+  margin: 0 auto;
+  position: relative;
+  width: 432px;
+  height: 768px;
+  background: #313338;
+  border-radius: 12px;
+}
