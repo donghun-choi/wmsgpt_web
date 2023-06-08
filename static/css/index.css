@@ -3,7 +3,11 @@
   display: flex;
   margin: 0 auto;
 }
-
+#sec-inner1 {
+  width: 1512px;
+  display: flex;
+  margin: 0 auto;
+}
 section {
   height: 100vh;
 }
@@ -46,7 +50,7 @@ header {
 
 #sec-2 {
   height: 100vh;
-  padding: 32px;
+  /* padding: 32px; */
   background: #000;
   color: white;
   display: flex;
@@ -82,7 +86,7 @@ header {
 .discord-chat-container > img {
   width: 98%;
 }
-#aboutWmsgpt img {
+#sec-3 img {
   width: 172px;
   height: 172px;
   filter: drop-shadow(0px 0px 8px #000);
@@ -90,11 +94,12 @@ header {
 
 .humor-contaier {
   display: flex;
-  width: 100%;
+  width: 70vw;
   height: 172px;
-  padding: 80px 120px;
+  margin: 0 auto;
 }
 #line {
+  height: 172px;
   margin: 0 48px;
   border-right: 1px solid #86868b;
 }
@@ -103,7 +108,8 @@ header {
   display: flex;
   justify-content: space-around;
 }
-.three-point h4 {
+.three-point div > h4 {
+  margin: 8px 0px;
   height: 14px;
   color: #86868b;
 }
@@ -122,33 +128,34 @@ header {
   letter-spacing: 0.012rem;
   color: #86868b;
 }
+#sec-3 {
+  padding-top: 60px;
+}
 #notimportant {
   color: #86868b;
   font-size: 17px;
   font-weight: 550;
 }
 #lie {
+  height: 0px;
   font-size: 12px;
   position: relative;
   width: 12px;
-  height: 12px;
   margin-left: auto;
   margin-right: 60px;
 }
-#displayblock {
-  display: block;
-}
+
 .introductingWmsgpt {
   font-weight: 600;
   font-size: 24px;
   color: #86868b;
-  margin-top: 200px;
+  margin-top: 120px;
   padding: 0 15vw;
 }
 #important {
   color: #000;
 }
-#aboutWmsgpt button {
+#sec-3 button {
   color: black;
   border: 2px solid black;
   border-radius: 12px;
@@ -157,4 +164,93 @@ header {
   height: 40px;
   margin-top: 30px;
   margin-left: 15vw;
+}
+
+#sec-4 {
+  background: black;
+}
+
+@media (max-width: 768px) {
+  #sec-1 span {
+    font-size: 16px;
+  }
+  #sec-2 h1 {
+    font-size: 27px;
+  }
+  .discord-chat-container {
+    margin: 12px;
+  }
+  .three-point > div {
+    width: 160px;
+    height: 180px;
+  }
+  .three-point span {
+    height: 20px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    line-height: 0.5555555556;
+    font-weight: 600;
+  }
+  #lie {
+    height: 0px;
+    font-size: 0.5rem;
+    margin: 0;
+    margin-left: 58px;
+  }
+  .introduction {
+    height: auto;
+    margin: 12px;
+  }
+  .introduction hr {
+    display: none;
+  }
+  .blockonmobile {
+    display: block;
+  }
+  #hideonmobile {
+    display: none;
+  }
+  #sec-inner {
+    width: 100vw;
+  }
+  #sec-inner1 {
+    width: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .discord-chat-container > img {
+    margin: auto;
+  }
+  #introductingWmsgpt {
+    margin-top: 32px;
+  }
+  .humor-contaier div.three-point div h3 {
+    font-size: 1.2rem;
+  }
+  #notimportant {
+    font-size: 1rem;
+  }
+  .three-point > div:nth-child(2) > span:nth-child(3) {
+  }
+  .three-point div span {
+    margin-top: 0px;
+  }
+  #sec-3 button {
+    font-size: 0.9rem;
+  }
+}
+
+/* iPad Mini Horizental*/
+@media (min-width: 512px) {
+  @media (max-width: 1133px) {
+    .introductingWmsgpt {
+      font-size: 20px;
+    }
+    #sec-3 button {
+      font-size: 0.8rem;
+    }
+  }
 }
